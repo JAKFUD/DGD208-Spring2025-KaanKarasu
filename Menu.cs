@@ -1,18 +1,21 @@
+using System;
+using System.Collections.Generic;
+
 public class Menu
 {
-    private string title;
-    private List<string> options;
+    private string Title;
+    private List<string> Options;
 
     public Menu(string title, List<string> options)
     {
-        this.title = title;
-        this.options = options;
+        Title = title;
+        Options = options;
     }
 
     public void Display()
     {
-        Console.WriteLine("=== " + title + " ===");
-        foreach (var option in options)
+        Console.WriteLine($"=== {Title} ===");
+        foreach (var option in Options)
         {
             Console.WriteLine(option);
         }
